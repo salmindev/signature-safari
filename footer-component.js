@@ -483,7 +483,7 @@ class FooterComponent extends HTMLElement {
           </div>
           <div class="row mt-5">
             <div class="col-md-12 text-center">
-              <p class="text-white">&copy; 2024 Signature Safari, All Right Reserved.</p>
+              <p class="text-white">&copy; 2025 Signature Safari, All Right Reserved.</p>
             </div>
           </div>
         </div>
