@@ -12664,122 +12664,6 @@ textarea.form-control {
   color: #fff !important;
 }
 
-.ftco-footer-social li a:hover {
-  color: #f15d30;
-}
-
-.footer-small-nav>li {
-  display: inline-block;
-}
-
-.footer-small-nav>li a {
-  margin: 0 10px 10px 0;
-}
-
-.footer-small-nav>li a:hover,
-.footer-small-nav>li a:focus {
-  color: #f15d30;
-}
-
-.media .ftco-icon {
-  width: 100px;
-}
-
-.media .ftco-icon span {
-  color: #f15d30;
-}
-
-.ftco-media {
-  background: #fff;
-  border-radius: 0px;
-}
-
-.ftco-media .heading {
-  font-weight: normal;
-}
-
-.ftco-media.ftco-media-shadow {
-  padding: 40px;
-  background: #fff;
-  -webkit-box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 10px 50px -15px rgba(0, 0, 0, 0.3);
-  -webkit-transition: .2s all ease;
-  -o-transition: .2s all ease;
-  transition: .2s all ease;
-  position: relative;
-  top: 0;
-}
-
-.ftco-media.ftco-media-shadow:hover,
-.ftco-media.ftco-media-shadow:focus {
-  top: -3px;
-  -webkit-box-shadow: 0 10px 70px -15px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 10px 70px -15px rgba(0, 0, 0, 0.3);
-}
-
-.ftco-media .icon {
-  font-size: 50px;
-  display: block;
-  color: #f15d30;
-}
-
-.ftco-media.text-center .ftco-icon {
-  margin: 0 auto;
-}
-
-.ftco-overflow-hidden {
-  overflow: hidden;
-}
-
-.padding-top-bottom {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-#map {
-  width: 100%;
-}
-
-@media (max-width: 991.98px) {
-  #map {
-    height: 300px;
-  }
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(241, 93, 48, 0.4);
-  }
-
-  70% {
-    -webkit-box-shadow: 0 0 0 30px rgba(241, 93, 48, 0);
-  }
-
-  100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(241, 93, 48, 0);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -moz-box-shadow: 0 0 0 0 rgba(241, 93, 48, 0.4);
-    -webkit-box-shadow: 0 0 0 0 rgba(241, 93, 48, 0.4);
-    box-shadow: 0 0 0 0 rgba(241, 93, 48, 0.4);
-  }
-
-  70% {
-    -moz-box-shadow: 0 0 0 30px rgba(241, 93, 48, 0);
-    -webkit-box-shadow: 0 0 0 30px rgba(241, 93, 48, 0);
-    box-shadow: 0 0 0 30px rgba(241, 93, 48, 0);
-  }
-
-  100% {
-    -moz-box-shadow: 0 0 0 0 rgba(241, 93, 48, 0);
-    -webkit-box-shadow: 0 0 0 0 rgba(241, 93, 48, 0);
-    box-shadow: 0 0 0 0 rgba(241, 93, 48, 0);
-  }
-}
-
 .heading-section .subheading {
   font-size: 30px;
   display: block;
@@ -12794,9 +12678,7 @@ textarea.form-control {
   line-height: 1.4;
 }
 
-.heading-section h2 span {
-  font-weight: 400;
-}
+
 
 @media (max-width: 767.98px) {
   .heading-section h2 {
