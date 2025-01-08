@@ -214,27 +214,28 @@
     .next {
       right: 10px;
     }
-    .mySlides {
-  height: 100vh;
-  width: 100%;
-  }
-.cycle-title{
-  margin-top: 200px;
-}
 
-@media screen and (max-width: 768px)
-{
- 
-  .mySlides{
-    height: 50vh;
-    margin-top: 90px;
-  }
-  
-.cycle-title{
-  margin-top: 10px;
-}
-  
-}
+    .mySlides {
+      height: 100vh;
+      width: 100%;
+    }
+
+    .cycle-title {
+      margin-top: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .mySlides {
+        height: 50vh;
+        margin-top: 100px;
+      }
+
+      .cycle-title {
+        margin-top: 10px;
+      }
+
+    }
   </style>
 </head>
 
@@ -244,15 +245,18 @@
   <!-- END Nav -->
   <section id="heroSlider hero-banner">
     <div class="w3-container-full w-100 container-fluid">
-      <img class="mySlides" src="images/cyclic00.jpg" >
-      <img class="mySlides" src="images/IMG_7244.jpg" >
+      <img class="mySlides" src="images/cyclic00.jpg">
+      <img class="mySlides" src="images/IMG_7244.jpg">
       <img class="mySlides" src="images/cyclic-hero.jpeg">
       <div class="w3-display-middle w3-container w-100 cycle-title">
-        <h1 class="mb-0 bread fw-bold text-white text-center d-md-block d-none" style="font-weight: bolder; font-size: xx-large;text-shadow: 3px 4px 5px black;">Cycle Kilimanjaro to Zanzibar</h1>
-        <p class="mb-0 bread fw-bold text-white text-center d-block d-md-none" style="font-size: 30px; text-shadow: 4px 5px 5px black;">Cycle Kilimanjaro to Zanzibar</p>
+        <h1 class="mb-0 bread fw-bold text-white text-center d-md-block d-none"
+          style="font-weight: bolder; font-size: xx-large;text-shadow: 3px 4px 5px black;">Cycle Kilimanjaro to Zanzibar
+        </h1>
+        <p class="mb-0 bread fw-bold text-white text-center d-block d-md-none"
+          style="font-size: 28px; text-shadow: 4px 5px 5px black;line-height: 40px;margin-top: 90px;">Cycle Kilimanjaro to Zanzibar</p>
       </div>
     </div>
-</section>
+  </section>
   <section class="ftco-section ftco-no-pb contact-section mb-4">
     <div class="container">
       <h3 class="fw-bold text-center">Embark on a cycling adventure in Tanzania</h3>
@@ -344,7 +348,7 @@
           style="height: 450px; background-image: url('images/map1.png'); background-position: center; background-repeat: no-repeat; background-size: cover;">
         </div>
       </div>
-      <div class="row d-block bg-white" >
+      <div class="row d-block bg-white">
         <ul class="nav nav-tabs sticky">
           <li class="nav-item">
             <a class="nav-link active" data-bs-toggle="tab" href="#home">Itinerary</a>
@@ -1001,7 +1005,8 @@
             book with me.</h5>
           <p class="text-dark"><i class="bi bi-envelope fw-bold" style="font-size: 24px;"></i>
             <strong>cliclermont@gmail.com</strong>&nbsp;&nbsp;&nbsp;<span class="icon fa fa-whatsapp fw-bold"
-              style="font-size: 24px;"></span>&nbsp;&nbsp;<strong>+1 (867) 445-2167</strong></p>
+              style="font-size: 24px;"></span>&nbsp;&nbsp;<strong>+1 (867) 445-2167</strong>
+          </p>
           <button type="button" class="btn btn-success"><a href="https://wa.me/+18674452167" class="text-white"> <span
                 class="icon fa fa-whatsapp"></span>
               Chat</a></button>
@@ -1256,19 +1261,19 @@
 
   <script>
     var slideIndex = 0;
-carousel();
+    carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 4000); // Change image every 2 seconds
-}
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) { slideIndex = 1 }
+      x[slideIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
   </script>
   <script type="module" src="navbar-component.js"></script>
   <script src="footer-component.js" defer></script>
