@@ -562,6 +562,9 @@ render() {
                     </div>
                   </div>
                 </li>
+                <li class="nav-item">
+                <a href="/tanzania-cycling-tour" class="nav-link">Cycling</a>
+                </li>
                 <li class="nav-item dropdown" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle" role="button" aria-expanded="false">
                     Tanzania
@@ -622,9 +625,7 @@ render() {
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item">
-                  <a href="/tanzania-cycling-tour" class="nav-link">Cycling</a>
-                </li>
+               
                 <li class="nav-item d-md-none d-block">
                   <a href="/blog" class="nav-link ">Blog</a>
                 </li>
