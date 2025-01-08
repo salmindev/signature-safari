@@ -71,8 +71,8 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  box-sizing: border-box;
 }
-
 
 
 h1,

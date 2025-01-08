@@ -471,14 +471,16 @@ class FooterComponent extends HTMLElement {
               <div class="col">
                 <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
               </div>
-              <div type="submit" class="btn text-white w-100 col-3" style="background-color:#f15d30;">Subscribe</div>
+              <center>
+              <div type="submit" class="btn text-white col-sm-6 col-md-4" style="background-color:#f15d30; max-width:100%;">Subscribe</div>
+              </center>
             </div>
           </form>
           <div class="row mt-3">
             <div class="col-md-12 col-sm-6 text-center">
               <h2 class="fw-bold text-white">We're happy to be trusted by</h2>
               <p class="text-white text-center">The biggest African Safari Booking platform <span class="bolding text-primary"><a class="text-primary" href="https://www.safarigo.com/">www.safarigo.com</a></span><br>
-              <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span></p>
+             <span class="bolding text-primary"><a class="text-primary" href="#">www.safaribookings.com</a></span></p>
             </div>
           </div>
           <div class="row mt-5">
