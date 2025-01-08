@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="stylesheet" href="/css/animate.css" />
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="/css/magnific-popup.css" />
@@ -74,6 +74,27 @@
     img {
       vertical-align: middle;
     }
+    .mySlides {
+      height: 100vh;
+      width: 100%;
+    }
+
+    .cycle-title {
+      margin-top: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .mySlides {
+        height: 50vh;
+        margin-top: 90px;
+      }
+
+      .cycle-title {
+        margin-top: 10px;
+      }
+
+    }
   </style>
 </head>
 
@@ -82,18 +103,17 @@
   <navbar-component></navbar-component>
   <!-- END Nav -->
 
-  <section class="hero-wrap hero-wrap-2 js-fullheight" id="hero" style="background-image: url('/images/cyclic00.jpg')">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-        <div class="col-md-9 ftco-animate pb-5 text-center">
-          <p class="breadcrumbs">
-            <span class="mr-2"><A href="/it/">Casa<I class="fa fa-chevron-right"></i></a></span>
-            <span><a href="https://www.signaturesafari.com/tanzania-cycling-tour">Pedala dal Kilimanjaro a Zanzibar</a><i
-                class="fa fa-chevron-right"></i></span>
-          </p>
-          <h1 class="mb-0 bread">Pedala dal Kilimanjaro a Zanzibar</h1>
-        </div>
+  <section id="heroSlider hero-banner">
+    <div class="w3-container-full w-100 container-fluid">
+      <img class="mySlides" src="/images/cyclic00.jpg">
+      <img class="mySlides" src="/images/IMG_7244.jpg">
+      <img class="mySlides" src="/images/cyclic-hero.jpeg">
+      <div class="w3-display-middle w3-container w-100 cycle-title">
+        <h1 class="mb-0 bread fw-bold text-white text-center d-md-block d-none"
+          style="font-weight: bolder; font-size: xx-large;text-shadow: 3px 4px 5px black;">Pedala dal Kilimanjaro a Zanzibar
+        </h1>
+        <p class="mb-0 bread fw-bold text-white text-center d-block d-md-none"
+          style="font-size: 30px; text-shadow: 4px 5px 5px black;">Pedala dal Kilimanjaro a Zanzibar</p>
       </div>
     </div>
   </section>
@@ -933,35 +953,22 @@
     </svg>
   </div>
   <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    var slideIndex = 0;
+carousel();
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("demo");
-      let captionText = document.getElementById("caption");
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
-    }
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 4000); // Change image every 2 seconds
+}
   </script>
+
   <script src="/js/jquery.min.js"></script>
   <script src="/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="/js/popper.min.js"></script>
@@ -987,34 +994,7 @@
       new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,fr,de,zh-CN,it,ru' }, 'google_translate_element');
     }
   </script>
-  <script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-      const images = [
-        'images/cyclic-hero.jpeg',
-        'images/cyclic-hero1.jpeg',
-        'images/cyclic00.jpg'
-      ];
-      let currentImageIndex = 0;
 
-      const hero = document.getElementById('hero');
-
-      function changeBackgroundImage() {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        hero.style.backgroundImage = `url(${images[currentImageIndex]})`;
-      }
-
-      setInterval(changeBackgroundImage, 5000);
-
-      // Preload images and start changing background images
-      preloadImages(images, () => {
-        // Initially set the first background image
-        document.getElementById('background').style.backgroundImage = images[0];
-        // Change background image every 5 seconds
-        setInterval(changeBackgroundImage, 5000);
-      });
-    });
-
-  </script>
   <script type="module" src="/it/navbar-component.js"></script>
   <script src="/it/footer-component.js" defer></script>
 </body>

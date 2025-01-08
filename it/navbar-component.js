@@ -293,13 +293,13 @@ document.body.appendChild(gtmNoscript);
                     <a href="/it/contact.html" class="nav-link ">info@signaturesafari.com</a>
                   </li>
                   <li class="nav-item">
-                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="images/united-states.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/" class="nav-link "><img src="/images/united-states.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item">
-                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="images/france.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/fr" class="nav-link "><img src="/images/france.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item">
-                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="images/italy.png" style="width:25px; height:25px;"></a>
+                  <a href="https://www.signaturesafari.com/it" class="nav-link "><img src="/images/italy.png" style="width:25px; height:25px;"></a>
                   </li>
                   <li class="nav-item dropdown my-3 d-md-none d-sm-block" @click="${this.toggleDropdown}">
                   <a class="nav-link dropdown-toggle btn-primary w-50" role="button" aria-expanded="false">
