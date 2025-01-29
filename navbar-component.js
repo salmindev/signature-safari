@@ -229,13 +229,13 @@ class NavbarComponent extends LitElement {
         j.async = true;
         j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-WQTGVBG7'); // Replace 'GTM-WQTGVBG7' with your GTM ID
+    })(window, document, 'script', 'dataLayer', 'G-L9LZ71S74Y'); // Replace 'GTM-WQTGVBG7' with your GTM ID
 `;
     document.head.appendChild(gtmScript);
 // Add GTM noscript fallback
 const gtmNoscript = document.createElement('noscript');
 gtmNoscript.innerHTML = `
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQTGVBG7"
+    <iframe src="https://www.googletagmanager.com/ns.html?id=G-L9LZ71S74Y"
             height="0" width="0" style="display:none;visibility:hidden;"></iframe>
 `; // Replace 'GTM-WQTGVBG7' with your GTM ID
 document.body.appendChild(gtmNoscript);
