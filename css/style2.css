@@ -12782,138 +12782,9 @@ h5,
   color: #fff;
 }
 
-.btn.btn-secondary {
-  background: #040e26 !important;
-  border: 1px solid #040e26 !important;
-  color: #fff !important;
-}
-
-.btn.btn-secondary:hover {
-  border: 1px solid #040e26;
-  background: transparent;
-  color: #040e26;
-}
-
-.btn.btn-secondary.btn-outline-secondary {
-  border: 1px solid #040e26;
-  background: transparent;
-  color: #040e26;
-}
-
-.btn.btn-secondary.btn-outline-secondary:hover {
-  border: 1px solid transparent;
-  background: #040e26;
-  color: #fff;
-}
-
-.btn.btn-outline-white {
-  border-color: rgba(255, 255, 255, 0.8);
-  background: none;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  border-width: 1px;
-  color: #fff;
-}
-
-.btn.btn-outline-white:hover,
-.btn.btn-outline-white:focus,
-.btn.btn-outline-white:active {
-  background: #fff;
-  border-color: #fff;
-  color: #f15d30;
-}
-
 .ftco-select-destination .container-2 {
   margin: 0 0 0 auto !important;
   max-width: 1290px;
-}
-
-.project-destination .img {
-  display: block;
-  width: 100%;
-  height: 320px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-}
-
-.project-destination .text {
-  padding: 20px;
-  position: relative;
-  height: 320px;
-}
-
-.project-destination .text h3 {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  position: absolute;
-  top: 0;
-  left: 20px;
-  margin-top: -8px;
-  padding: 4px 10px;
-  background: #f15d30;
-}
-
-.project-destination .text h3:after,
-.project-destination .text h3:before {
-  position: absolute;
-  top: 0;
-  content: '';
-}
-
-.project-destination .text h3:after {
-  left: -8px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 8px 8px;
-  border-color: transparent transparent #c7390d transparent;
-}
-
-.project-destination .text h3:before {
-  width: 0;
-  right: -8px;
-  height: 0;
-  border-style: solid;
-  border-width: 8px 0 0 8px;
-  border-color: transparent transparent transparent #c7390d;
-}
-
-.project-destination .text span {
-  position: absolute;
-  bottom: 20px;
-  right: -5px;
-  display: inline-block;
-  background: #f15d30;
-  padding: 4px 5px 4px 15px;
-  border-radius: 20px 0 0 20px;
-  color: #fff;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.project-destination .text span:after {
-  position: absolute;
-  top: -5px;
-  right: 0;
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 0 0 5px;
-  border-color: transparent transparent transparent #c7390d;
-}
-
-.project-destination:hover .text span {
-  padding-right: 20px;
-  background: #f15d30;
 }
 
 .project-wrap {
@@ -13038,20 +12909,7 @@ h5,
   transition: all 0.3s ease;
 }
 
-.services .icon {
-  line-height: 1.3;
-  position: relative;
-}
 
-.services .icon span {
-  font-size: 60px;
-  color: #f15d30;
-}
-
-.services .media-body h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
 
 .services.services-1 {
   width: 100%;
@@ -13075,33 +12933,6 @@ h5,
   opacity: .5;
   z-index: -1;
 }
-
-.services.services-1 .icon {
-  width: 115px;
-  height: 80px;
-  margin-left: -35px;
-  margin-bottom: 10px;
-  background: #f15d30;
-  position: relative;
-}
-
-.services.services-1 .icon span {
-  color: #fff;
-  font-size: 50px;
-}
-
-.services.services-1 .icon:after {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0 5px 5px;
-  border-color: transparent transparent #c7390d transparent;
-}
-
 .services.services-1 .media-body {
   color: rgba(255, 255, 255, 0.8);
 }
@@ -13124,31 +12955,6 @@ h5,
 
 .services.color-4:after {
   background: #ff5959;
-}
-
-.aside-stretch {
-  background: #f48260;
-}
-
-.aside-stretch:after {
-  position: absolute;
-  top: 0;
-  right: 100%;
-  bottom: 0;
-  content: '';
-  width: 360%;
-  background: #f48260;
-}
-
-@media (max-width: 767.98px) {
-  .aside-stretch {
-    background: transparent;
-  }
-
-  .aside-stretch:after {
-    background: transparent;
-    display: none;
-  }
 }
 
 .form-control {
