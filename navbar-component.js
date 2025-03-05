@@ -238,7 +238,7 @@ gtmNoscript.innerHTML = `
     <iframe src="https://www.googletagmanager.com/ns.html?id=AW-16835956925"
             height="0" width="0" style="display:none;visibility:hidden;"></iframe>
 `; // Replace 'GTM-WQTGVBG7' with your GTM ID
-document.body.appendChild(gtmNoscript);
+document.head.appendChild(gtmNoscript);
   
 
     this.isCollapsed = true;  // State to track the collapse state
