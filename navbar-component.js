@@ -214,7 +214,14 @@ class NavbarComponent extends LitElement {
      tawkScript.charset = "UTF-8";
      tawkScript.setAttribute("crossorigin", "*");
      document.head.appendChild(tawkScript);
-    // Add the Google Tag Manager script dynamically
+     
+const gtmNoscript = document.createElement('script');
+gtmNoscript.innerHTML = `
+    <iframe src="https://www.googletagmanager.com/ns.html?id=AW-16835956925"
+            height="0" width="0" style="display:none;visibility:hidden;"></iframe>
+`; 
+document.head.appendChild(gtmNoscript);
+    
     const gtmScript = document.createElement('script');
     gtmScript.textContent = `
     (function(w, d, s, l, i) {
@@ -232,13 +239,7 @@ class NavbarComponent extends LitElement {
     })(window, document, 'script', 'dataLayer', 'AW-16835956925'); // Replace 'GTM-WQTGVBG7' with your GTM ID
 `;
     document.head.appendChild(gtmScript);
-// Add GTM noscript fallback
-const gtmNoscript = document.createElement('noscript');
-gtmNoscript.innerHTML = `
-    <iframe src="https://www.googletagmanager.com/ns.html?id=AW-16835956925"
-            height="0" width="0" style="display:none;visibility:hidden;"></iframe>
-`; // Replace 'GTM-WQTGVBG7' with your GTM ID
-document.head.appendChild(gtmNoscript);
+
   
 
     this.isCollapsed = true;  // State to track the collapse state
