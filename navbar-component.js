@@ -206,6 +206,23 @@ class NavbarComponent extends LitElement {
 
   constructor() {
     super();
+     
+     // Add the Google Analytics script dynamically
+     const gtagScript = document.createElement('script');
+     gtagScript.async = true;
+     gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=AW-16835956925';
+ 
+     const inlineScript = document.createElement('script');
+     inlineScript.text = `
+       window.dataLayer = window.dataLayer || [];
+       function gtag() { dataLayer.push(arguments); }
+       gtag('js', new Date());
+       gtag('config', 'AW-16835956925');
+     `;
+ 
+     document.head.appendChild(gtagScript);
+     document.head.appendChild(inlineScript);
+
      // Add the Tawk.to script dynamically
      const tawkScript = document.createElement("script");
      tawkScript.type = "text/javascript";
@@ -214,12 +231,6 @@ class NavbarComponent extends LitElement {
      tawkScript.charset = "UTF-8";
      tawkScript.setAttribute("crossorigin", "*");
      document.head.appendChild(tawkScript);
-     
-     
-     
-
-  
-
     this.isCollapsed = true;  // State to track the collapse state
   }
 
